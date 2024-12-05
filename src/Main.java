@@ -2,9 +2,10 @@ public class Main {
     public static void main(String[] args) {
         //Atividades da aula de foco do dia 05/12/24
 
-        somaDeNumeros(5);
-        fatorial(5);
-        contagemDeDigitos(12345);
+        //somaDeNumeros(5);
+        //fatorial(5);
+        //contagemDeDigitos(12345);
+        numerosPrimos(29);
 
 
 
@@ -44,5 +45,15 @@ public class Main {
         String numeroConvertido = Integer.toString(n);
         System.out.println(numeroConvertido.length());
 
+    }
+
+    public static void numerosPrimos (int n) {
+        //4 - Escreva um programa que verifique se um número inteiro é primo.
+
+        if (n / n == 1) {
+            System.out.println(true);
+        } else {
+            System.out.println(false);
+        }
     }
 }
