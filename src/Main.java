@@ -2,8 +2,9 @@ public class Main {
     public static void main(String[] args) {
         //Atividades da aula de foco do dia 05/12/24
 
-        //somaDeNumeros(5);
-        //fatorial(5);
+        somaDeNumeros(5);
+        fatorial(5);
+        contagemDeDigitos(12345);
 
 
 
@@ -33,6 +34,15 @@ public class Main {
             i--;
         }
         System.out.println(soma);
+
+    }
+
+    public static void contagemDeDigitos(int n) {
+        //3 - Escreva um programa que receba um número inteiro e conte quantos
+        //dígitos ele possui.
+
+        String numeroConvertido = Integer.toString(n);
+        System.out.println(numeroConvertido.length());
 
     }
 }
