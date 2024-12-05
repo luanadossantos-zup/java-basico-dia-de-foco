@@ -8,6 +8,7 @@ public class Main {
         numerosPrimos(29);
         inversaoDeNumero(1234);
         potencia(3,4);
+        palindromo(123321);
 
 
     }
@@ -87,4 +88,25 @@ public class Main {
         System.out.println(soma);
     }
 
+    public static void palindromo(int n) {
+        //7 - Escreva um programa que verifique se um número inteiro é um
+        //palíndromo (lê-se da mesma forma de trás para frente).
+
+        int resto = 0;
+        int somaReverso = 0;
+        int temp = n;
+
+        while(n != 0) {
+            resto = n % 10;
+            somaReverso=(somaReverso * 10) + resto;
+            n = n / 10;
+        }
+        if(temp == somaReverso)
+            System.out.println(true);
+        else
+            System.out.println(false);
+    }
+
+
 }
+
