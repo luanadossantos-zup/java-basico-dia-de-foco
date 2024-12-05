@@ -7,6 +7,7 @@ public class Main {
         contagemDeDigitos(12345);
         numerosPrimos(29);
         inversaoDeNumero(1234);
+        potencia(3,4);
 
 
     }
@@ -73,4 +74,17 @@ public class Main {
         //output
         System.out.println (reverso);
     }
+
+    public static void potencia (int base, int expoente) {
+        //6 - Escreva um programa que calcule a potência de um número base
+        //elevado a expoente usando um loop for.
+
+        int soma = base;
+
+        for (int i = 1; i < expoente; i++) {
+            soma = soma * base;
+        }
+        System.out.println(soma);
+    }
+
 }
