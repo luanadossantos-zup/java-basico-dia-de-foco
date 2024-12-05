@@ -2,11 +2,11 @@ public class Main {
     public static void main(String[] args) {
         //Atividades da aula de foco do dia 05/12/24
 
-        //somaDeNumeros(5);
-        //fatorial(5);
-        //contagemDeDigitos(12345);
+        somaDeNumeros(5);
+        fatorial(5);
+        contagemDeDigitos(12345);
         numerosPrimos(29);
-
+        inversaoDeNumero(1234);
 
 
     }
@@ -55,5 +55,22 @@ public class Main {
         } else {
             System.out.println(false);
         }
+    }
+
+    public static void inversaoDeNumero(int n) {
+        //5 - Escreva um programa que inverta os dígitos de um número inteiro.
+
+        int reverso = 0;
+        int resto = 0;
+
+        while (n != 0)
+        {
+            resto = n % 10;
+            reverso = reverso * 10 + resto;
+            n = n / 10;
+        }
+
+        //output
+        System.out.println (reverso);
     }
 }
