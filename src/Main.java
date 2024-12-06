@@ -12,6 +12,8 @@ public class Main {
         potencia(3,4);
         palindromo(123321);
         multiploDeUmNumero(3,15);
+        binarioParaDecimal("1010");
+        fibonacci(5);
 
 
     }
@@ -122,6 +124,35 @@ public class Main {
         }
 
         System.out.println(valores);
+    }
+
+    public static void binarioParaDecimal(String binario) {
+        //9 - Escreva um programa que converta um número binário (representado
+        //como uma string) para decimal.
+
+        System.out.println(Integer.parseInt(binario, 2));
+
+    }
+
+    public static void fibonacci (int n) {
+        // 10 - Escreva um programa que imprima os primeiros n números da série de Fibonacci
+        // 0, 1, 1, 2, 3, 5, 8, 13, 21
+        int temp1 = 0;
+        int temp2 = 1;
+        int temp3 = 0;
+        int temp4 = 0;
+
+        System.out.println(temp1);
+        System.out.println(temp2);
+        for( int i = 1; i <= n-2; i++) {
+
+            temp3 = temp1 + temp2;
+            temp4= temp3;
+            System.out.println(temp4);
+            temp1 = temp2;
+            temp2 = temp3;
+
+        }
     }
 
 }
