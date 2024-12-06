@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         //Atividades da aula de foco do dia 05/12/24
@@ -9,6 +11,7 @@ public class Main {
         inversaoDeNumero(1234);
         potencia(3,4);
         palindromo(123321);
+        multiploDeUmNumero(3,15);
 
 
     }
@@ -107,6 +110,19 @@ public class Main {
             System.out.println(false);
     }
 
+    public static void multiploDeUmNumero(int n, int m) {
+        // 8 - Escreva um programa que imprima todos os múltiplos de um número n
+        //até um limite m.
+
+
+        ArrayList<Integer> valores = new ArrayList<>();
+
+        for (int i = n; i <= m; i += n) {
+            valores.add(i);
+        }
+
+        System.out.println(valores);
+    }
 
 }
 
